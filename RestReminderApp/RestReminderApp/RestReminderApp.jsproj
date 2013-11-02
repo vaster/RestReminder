@@ -58,6 +58,9 @@
     <Content Include="images\smalllogo.png" />
     <Content Include="images\splashscreen.png" />
     <Content Include="images\storelogo.png" />
+    <Content Include="images\table_tennis.png" />
+    <Content Include="images\thought_police.png" />
+    <Content Include="js\backgroundtask.js" />
     <Content Include="js\const\constant.js" />
     <Content Include="js\default.js" />
     <Content Include="css\default.css" />
