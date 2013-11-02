@@ -12,8 +12,32 @@
     <!-- RestReminderApp references -->
     <link href="/css/default.css" rel="stylesheet" />
     <script src="/js/default.js"></script>
+    <script src="js/view/home/home.js"></script>
+    <script src="js/navigation/navigator.js"></script>
 </head>
 <body>
-    <p>Content goes here</p>
+   <div id="contenthost" data-win-control="Application.PageControlNavigator" data-win-options="{home: '/js/view/home/home.html'}"></div>
+    <div id="appbar" data-win-control="WinJS.UI.AppBar">
+        <button data-win-control="WinJS.UI.AppBarCommand"
+            data-win-options="{
+            label:'New', icon:'add', 
+            }"
+            type="button">
+        </button>
+
+         <button data-win-control="WinJS.UI.AppBarCommand"
+            data-win-options="{
+            label:'Favorites',icon:'Events'
+            }"
+            type="button">
+        </button>
+
+          <button data-win-control="WinJS.UI.AppBarCommand"
+            data-win-options="{
+            label:'Graphics',icon:'list'
+            }"
+            type="button">
+        </button>
+    </div>
 </body>
 </html>

@@ -58,8 +58,17 @@
     <Content Include="images\smalllogo.png" />
     <Content Include="images\splashscreen.png" />
     <Content Include="images\storelogo.png" />
+    <Content Include="js\const\constant.js" />
     <Content Include="js\default.js" />
     <Content Include="css\default.css" />
+    <Content Include="js\navigation\navigator.js" />
+    <Content Include="js\notification\toastNotification.js" />
+    <Content Include="js\view-model\events.js" />
+    <Content Include="js\view-model\home.js" />
+    <Content Include="js\view\events\events.html" />
+    <Content Include="js\view\home\home.css" />
+    <Content Include="js\view\home\home.html" />
+    <Content Include="js\view\home\home.js" />
     <None Include="RestReminderApp_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
@@ -67,8 +76,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="js\libs\" />
-    <Folder Include="js\view-model\" />
-    <Folder Include="js\view\" />
+    <Folder Include="js\model\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\$(WMSJSProjectDirectory)\Microsoft.VisualStudio.$(WMSJSProject).targets" />
   <!-- To modify your build process, add your task inside one of the targets below then uncomment
