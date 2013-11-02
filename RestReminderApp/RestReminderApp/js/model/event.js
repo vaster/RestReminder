@@ -3,6 +3,8 @@
     var eventDTO = {
         title: "",
         description: "",
+        duration: 0,
+        startTime: new Date(),
     }
 
     WinJS.Namespace.define("Models.Event", {

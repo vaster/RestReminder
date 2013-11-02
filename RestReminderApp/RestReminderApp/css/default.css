@@ -2,7 +2,7 @@
 }
 
 #call-form-for-event {
-    display:none;
+    visibility:hidden;
 }
 
 .appGrid {
