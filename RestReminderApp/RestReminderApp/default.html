@@ -16,28 +16,36 @@
     <script src="js/navigation/navigator.js"></script>
 </head>
 <body>
-   <div id="contenthost" data-win-control="Application.PageControlNavigator" data-win-options="{home: '/js/view/home/home.html'}"></div>
-    <div id="appbar" data-win-control="WinJS.UI.AppBar">
-        <button data-win-control="WinJS.UI.AppBarCommand"
-            data-win-options="{
+    <div class="appGrid">
+        <div id="navigation-bar">
+            <button></button>
+        </div>
+        <div id="contenthost" data-win-control="Application.PageControlNavigator" data-win-options="{home: '/js/view/home/home.html'}"></div>
+        <div id="appbar" data-win-control="WinJS.UI.AppBar">
+            <button data-win-control="WinJS.UI.AppBarCommand"
+                data-win-options="{
+                 extraClass:'colorbutton',
             label:'New', icon:'add', 
             }"
-            type="button">
-        </button>
+                type="button">
+            </button>
 
-         <button data-win-control="WinJS.UI.AppBarCommand"
-            data-win-options="{
+            <button data-win-control="WinJS.UI.AppBarCommand"
+                data-win-options="{
+                extraClass:'colorbutton',
             label:'Favorites',icon:'Events'
             }"
-            type="button">
-        </button>
+                type="button">
+            </button>
 
-          <button data-win-control="WinJS.UI.AppBarCommand"
-            data-win-options="{
+            <button data-win-control="WinJS.UI.AppBarCommand"
+                data-win-options="{
+                extraClass:'colorbutton',
             label:'Graphics',icon:'list'
             }"
-            type="button">
-        </button>
+                type="button">
+            </button>
+        </div>
     </div>
 </body>
 </html>
