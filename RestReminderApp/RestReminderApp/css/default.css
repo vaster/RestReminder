@@ -1,6 +1,10 @@
 ﻿body {
 }
 
+#call-form-for-event {
+    display:none;
+}
+
 .appGrid {
     width: 100vw;
     height: 100vh;

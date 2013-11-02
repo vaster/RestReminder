@@ -1,17 +1,34 @@
 ﻿<!DOCTYPE html>
 <html>
-    <head>
-        <title></title>
-    </head>
-    <body>
-        <div id="event-form-creation-form" data-win-control="WinJS.UI.Flyout">
-            <label for="new-event-title">Title</label>
-            <input id="new-event-title" />
-
-            <div>Description</div>
-            <textarea id="new-event-description" cols="50" rows="6"></textarea>
+<head>
+    <link href="events.css" rel="stylesheet" />
+    <title></title>
+</head>
+<body>
+    <!--Template-->
+    <div id="events-template-container" data-win-control="WinJS.Binding.Template">
+        <div class="event-template">
+            <div data-win-bind="innerHTML:title"></div>
+            <div data-win-bind="innerHTML:description"></div>
         </div>
+    </div>
 
+    <!--Content-->
+    <div id="event-form-creation-form" data-win-control="WinJS.UI.Flyout">
+        <label for="new-event-title">Title</label>
+        <input id="new-event-title" />
 
-    </body>
+        <div>Description</div>
+        <textarea id="new-event-description" cols="50" rows="6"></textarea>
+
+        <button id="create-event-btn">Create</button>
+    </div>
+
+    <div id="events-listview" data-win-control="WinJS.UI.ListView"
+        data-win-options="{ 
+                    itemDataSource : ViewMoDels.Event.eventsList.dataSource,
+                    itemTemplate:select('#events-template-container'),
+                    }">
+    </div>
+</body>
 </html>
