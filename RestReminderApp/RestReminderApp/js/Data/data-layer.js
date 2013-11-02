@@ -2,6 +2,15 @@
 (function () {
     var eventsArray = [];
 
+    eventsArray = [{
+        Id: 69,
+        Title: "Coffee",
+        Description:"Go drink some coffee!",
+        StartTime: "12:31:52.957",
+        EndTime: "12:31:52.957"
+    }
+    ];
+
     function getAllEvents() {
         return eventsArray;
     }
