@@ -11,8 +11,9 @@
 }
 
 .win-appbar {
-    background-color:lightgreen;
+    background-color: lightgreen;
 }
+
 .colorbutton,
 .colorbutton .win-commandimage,
 button.colorbutton:hover:active,
@@ -21,22 +22,29 @@ button.colorbutton:active {
     color: black;
 }
 
+.colorbutton .win-commandring,
+.colorbutton:active .win-commandring {
+    background-color: transparent;
+    border-color: black;
+}
+
 #navigation-bar {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
     -ms-grid-column-span: 3;
-    background-color:lightgreen;
+    background-color: lightgreen;
     padding-top: 10px;
 }
 
     #navigation-bar button {
         float: left;
-        font-size:40px;
-        border:none;
-        color:black;
+        font-size: 40px;
+        border: none;
+        color: black;
     }
+
         #navigation-bar button:hover {
-            background-color:transparent;
+            background-color: transparent;
         }
 
 #contenthost {

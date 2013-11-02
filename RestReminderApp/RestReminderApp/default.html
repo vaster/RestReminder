@@ -10,11 +10,29 @@
     <script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
 
     <!-- RestReminderApp references -->
+
+    <!--   CSS  -->
     <link href="/css/default.css" rel="stylesheet" />
-    <script src="/js/default.js"></script>
+    <link href="js/view/home/home.css" rel="stylesheet" />
+    <link href="js/view/events/events.css" rel="stylesheet" />
+
+
+    <!--   Models   -->
+    <script src="js/model/event.js"></script>
+
+    <!--   View Models  -->
+    <script src="js/view-model/events.js"></script>
+
+    <!--   Views  -->
+    <script src="js/view/events/events.js"></script>
     <script src="js/view/home/home.js"></script>
+
+     <!--   Helpers   -->
+    <script src="js/commands/command.js"></script>
     <script src="js/navigation/navigator.js"></script>
-    <script src="js/backgroundtask.js"></script>
+    <script src="/js/default.js"></script>
+    <!--<script src="js/backgroundtask.js"></script>-->
+   
 </head>
 <body>
     <div class="appGrid">
@@ -26,7 +44,18 @@
             <button data-win-control="WinJS.UI.AppBarCommand"
                 data-win-options="{
                  extraClass:'colorbutton',
-            label:'New', icon:'add', 
+                label:'New Graphic', icon:'add',
+                section:'global', 
+            }"
+                type="button">
+            </button>
+
+            <button data-win-control="WinJS.UI.AppBarCommand"
+                data-win-options="{
+                id:'navigate-onClick-to-events',
+                extraClass:'colorbutton',
+                label:'Events',icon:'favorite',
+                section:'global',
             }"
                 type="button">
             </button>
@@ -34,15 +63,19 @@
             <button data-win-control="WinJS.UI.AppBarCommand"
                 data-win-options="{
                 extraClass:'colorbutton',
-            label:'Favorites',icon:'Events'
+                label:'Graphics',icon:'list',
+                section:'global',
             }"
                 type="button">
             </button>
 
+
             <button data-win-control="WinJS.UI.AppBarCommand"
                 data-win-options="{
+                id:'call-form-for-event',
                 extraClass:'colorbutton',
-            label:'Graphics',icon:'list'
+                label:'New Event',icon:'add',
+                section:'selection',
             }"
                 type="button">
             </button>

@@ -1,4 +1,5 @@
-﻿// For an introduction to the Blank template, see the following documentation:
+﻿/// <reference path="commands/command.js" />
+// For an introduction to the Blank template, see the following documentation:
 // http://go.microsoft.com/fwlink/?LinkId=232509
 (function () {
     "use strict";
@@ -19,6 +20,8 @@
                 // Restore application state here.
             }
             args.setPromise(WinJS.UI.processAll().then(function () {
+
+                Commands.initAppBarCommands();
                 if (nav.location) {
                     nav.history.current.initialPlaceholder = true;
                     return nav.navigate(nav.location, nav.state);
