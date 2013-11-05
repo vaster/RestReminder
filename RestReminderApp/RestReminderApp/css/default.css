@@ -1,8 +1,11 @@
 ﻿body {
-}
+background:url('/images/background.jpg');
 
+}
+#contenthost {
+}
 #call-form-for-event {
-    visibility:hidden;
+    visibility:collapse;
 }
 
 .appGrid {
@@ -15,7 +18,7 @@
 }
 
 .win-appbar {
-    background-color: lightgreen;
+    background-color:rgba(0,0,0,0.5);
 }
 
 .colorbutton,
@@ -23,32 +26,32 @@
 button.colorbutton:hover:active,
 button.colorbutton:-ms-keyboard-active,
 button.colorbutton:active {
-    color: black;
+    color: white;
+    border:white;
 }
 
 .colorbutton .win-commandring,
-.colorbutton:active .win-commandring {
+.colorbutton:active .win-commandring {++++++++++++++
     background-color: transparent;
-    border-color: black;
 }
 
 #navigation-bar {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
     -ms-grid-column-span: 3;
-    background-color: lightgreen;
+    background-color:rgba(0,0,0,0.5);
     padding-top: 10px;
 }
 
     #navigation-bar button {
         float: left;
         font-size: 40px;
-        border: none;
-        color: black;
+        color: white;
+        border:none;
+         background-color: transparent;
     }
-
         #navigation-bar button:hover {
-            background-color: transparent;
+         background-color: transparent;
         }
 
 #contenthost {

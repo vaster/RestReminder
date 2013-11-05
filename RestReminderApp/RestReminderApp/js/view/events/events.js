@@ -11,7 +11,10 @@
 
         ready: function (element, options) {
             Commands.initAppBarrEventsCommands();
-            Commands.initNewEventCreateBtn(); 
+            Commands.initNewEventCreateBtn();
+            var btn = document.getElementById("call-form-for-event");
+            // TODO: move to proper place
+            btn.style.visibility = "visible";
         }
     });
 })();

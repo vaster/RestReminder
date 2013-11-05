@@ -12,6 +12,6 @@
     background-color: aquamarine;
 }
 
-#create-event-btn {
-    visibility: visible!important;
+body > #create-event-btn {
+    visibility:visible!important;
 }
